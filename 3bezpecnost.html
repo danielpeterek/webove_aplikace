@@ -8,6 +8,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -27,10 +28,10 @@
               </nav>
         </header>
         <main>
-            <h1 class="text-center">Bezpečnostní rizika webových aplikací</h1>
+            <h1 class="text-center nadpis">Bezpečnostní rizika webových aplikací</h1>
             <div class="container">
                 <ul>
-                    <li>Cross-site scripting</li>
+                    <li class="odrazka">Cross-site scripting</li>
                     <p>je metoda narušení WWW stránek využitím bezpečnostních chyb ve skriptech (především neošetřené vstupy). Útočník díky
                         těmto chybám v zabezpečení webové aplikace dokáže do stránek podstrčit
                         svůj vlastní javascriptový kód, což může využít buď pouze k poškození vzhledu stránky, jejímu znefunkčnění, získávání citlivých údajů návštěvníků stránek nebo obcházení bezpečnostních prvků aplikace. Často je též využíván při
@@ -41,7 +42,7 @@
                         která jdou do obrázků, odkazů a podobně, protože mohou začínat např. na
                         javascript:. Kvůli různým variacím a budoucím změnám je vhodné použít pro
                         tuto kontrolu whitelist.</p>
-                    <li>Cross-site request forgery</li>
+                    <li class="odrazka">Cross-site request forgery</li>
                     <p> je pasivní útok, kdy útočník nachystá na
                         nějakou stránku kód, který způsobí vyvolání URL na nějakém jiném serveru,
                         kde uživatel může být stále přihlášen.</p>
@@ -50,25 +51,25 @@
                         jiným způsobem mění, se doporučuje zásadně používat HTTP metodu POST.
                         Používat autorizační token – náhodně vygenerovaný řetězec pro danou akci a
                         pro aktuálního uživatele</p>
-                    <li>Clickjacking</li>
+                    <li class="odrazka">Clickjacking</li>
                     <p> Cizí stránka, na kterou je veden útok, je zobrazena na útočníkově stránce v iframe tak, že je vidět jen část bez bližšího kontextu. (Je možné
                         využít i opacity v CSS.) Uživatel je naveden ke kliknutí na tuto část stránky,
                         čímž provede nějakou akci, například hlasování v anketě.</p>
                     <p><b>Obrana: </b>Lze se bránit hlavičkou X-Frame-Options, která je v některých prohlížečích podporována, a Javascriptem. Princip spočívá v zabránění zobrazení
                         stránky v rámci.</p>
-                    <li>Session hijacking</li>
+                    <li class="odrazka">Session hijacking</li>
                     <p>je útok, při kterém útočník odposlechne cookie použité pro
                         označení úspěšně autentizovaného uživatele, a začne se za něj vydávat.</p>
                     <p><b>Obrana: </b>Session cookies musí mít označení secure, tedy mohou být poslána
                         jen přes šifrovaná SSL spojení. V případě předávání session ID přes URL je
                         obrana komplikovanější, vyžaduje zabránit úniku URL přes referer (odkazy,
                         obrázky, ...) a Session fixation.</p>
-                    <li>Phishing</li>
+                    <li class="odrazka">Phishing</li>
                     <p>Phishing je aktivní útok, při kterém útočník vydává svoje vlastní
                         webové stránky za stránky instituce, aby získal přihlašovací údaje uživatele.</p>
                     <p><b>Obrana: </b>vzdělávání uživatelů v kontrole autentizace serveru, použití Extended
                         Validation SSL Certificates.</p>
-                    <li>SQL Injection</li>
+                    <li class="odrazka">SQL Injection</li>
                     <p>je technika napadení databázové vrstvy programu vsunutím
                         (odtud „injection“) kódu přes neošetřený vstup a vykonání vlastního pozměněného SQL dotazu.</p>
                     <p><b>Obrana: </b>Důsledné používání PreparedStatement a jeho setXXX() metod pro
@@ -79,8 +80,18 @@
         </main>
         <footer class="py-5 bg-dark">
             <div class="container">
-                <hr>
-                <p class="m-0 text-center text-white">Copyright © Daniel Peterek 2021</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <h5 class="text-uppercase border-bottom mb-4 pb-3">Kontakt na autora</h5>
+                        <hr>
+                        <div>
+                            <p><b>Daniel Peterek</b></p>
+                            <p>E-mail: it1718@sspu-opava.cz</p>
+                            <p>Github: <a href="https://github.com/danielpeterek" target="_blank">https://github.com/danielpeterek</a></p>
+                            <p>© 2021 - SŠPU Opava</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
 

@@ -8,6 +8,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -27,7 +28,7 @@
               </nav>
         </header>
         <main>
-            <h1 class="text-center">Typy webových aplikací</h1>
+            <h1 class="text-center nadpis">Typy webových aplikací</h1>
             <div class="container">
                 <p>Současné webové aplikace jsou strukturovány do více vrstev, tradičně se uvádějí tři základní vrstvy: </p>
                 <ol>
@@ -35,12 +36,65 @@
                     <li>Logickou vrstvu představují technologie na dynamické generování webových stránek (PHP, ASP.NET, JSP apod.), jež se nejčastěji zpracovávají na straně webového serveru. </li>
                     <li>Datovou vrstvu mohou tvořit databáze umístěné na databázovém serveru, ale zdrojem dat mohou být také datové soubory nebo internetové služby. </li>
                 </ol>
+                <p>API (zkratka pro Application Programming Interface) označuje v informatice rozhraní pro programování aplikací.
+                    Jde o komplex procedur, funkcí, tříd či protokolů nějaké knihovny (ale třeba i jiného programu nebo jádra operačního systému), které může programátor využívat. API určuje, jakým způsobem jsou funkce knihovny volány ze zdrojového kódu programu.
+                    V programátorské praxi se můžeme setkat s celou řadou API - například s API operačních systémů (unixové systémy používají standard POSIX, OS od Microsoftu zase Windows API), grafickými API (OpenGL, DirectX, Vulkan) nebo s API databázových a informačních systémů.
+                    API se nyní hojně využívá při vývoji mobilních i webových aplikací a tvorbě internetových stránek. Smyslem webových API je zajištění komunikace mezi dvěma platformami, které si vzájemně vyměňují data. Umožňují využívat již naprogramovaná řešení a integrovat je do vlastních webů.
+                    V praxi se s integrací aplikačního rozhraní setkáváme třeba na stránkách zobrazujících polohu obchodu na Google mapách. V takovém případě je využito API z Google Map, které volají vrstvu kódu, jež zobrazuje požadovaná data.</p>
+                <h2 class="text-center">CRUD operace</h2>
+                <p>CRUD (Create, Read, Update, Delete) je zkratka, která zahrnuje čtyři základní operace
+                    prováděné s daty - vytvoření (create), čtení (read), editace (update) a smazání (delete).
+                    Někdy bývá zkratka rošířena na SCRUD (S = search)</p>
+                <div class="">
+                    <table>
+                        <tr>
+                            <th>Operation</th>
+                            <th>SQL</th>
+                            <th>HTTP</th>
+                            <th>DDS</th>
+                        </tr>
+                        <tr>
+                            <td>Create</td>
+                            <td>INSERT</td>
+                            <td>PUT / POST</td>
+                            <td>write</td>
+                        </tr>
+                        <tr>
+                            <td>Read (Retrieve)</td>
+                            <td>SELECT</td>
+                            <td>GET</td>
+                            <td>read / take</td>
+                        </tr>
+                        <tr>
+                            <td>Update (Modify)</td>
+                            <td>UPDATE</td>
+                            <td>POST | PUT | PATCH</td>
+                            <td>write</td>
+                        </tr>
+                        <tr>
+                            <td>Delete (Destroy)</td>
+                            <td>DELETE</td>
+                            <td>DELETE</td>
+                            <td>dispose</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </main>
         <footer class="py-5 bg-dark">
             <div class="container">
-                <hr>
-                <p class="m-0 text-center text-white">Copyright © Daniel Peterek 2021</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <h5 class="text-uppercase border-bottom mb-4 pb-3">Kontakt na autora</h5>
+                        <hr>
+                        <div>
+                            <p><b>Daniel Peterek</b></p>
+                            <p>E-mail: it1718@sspu-opava.cz</p>
+                            <p>Github: <a href="https://github.com/danielpeterek" target="_blank">https://github.com/danielpeterek</a></p>
+                            <p>© 2021 - SŠPU Opava</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
 

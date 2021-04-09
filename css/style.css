@@ -1,0 +1,35 @@
+.nadpis{
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 65px;
+    margin-bottom: 40px;
+}
+
+.odrazka {
+    color: tomato;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: lightgray;
+    margin-top: 150px;
+
+}
+
+h2 {
+    color: lightseagreen;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+}
